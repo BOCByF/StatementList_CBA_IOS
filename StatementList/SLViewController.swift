@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SLViewController.swift
 //  StatementList
 //
 //  Created by Shelton Han on 19/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SLViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
