@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLStatementHeaderCell" rowHeight="134" id="ANS-aw-5Ob">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="StatementHeaderCell" rowHeight="134" id="ANS-aw-5Ob">
                                 <rect key="frame" x="0.0" y="28" width="320" height="134"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ANS-aw-5Ob" id="X9c-FL-lDt">
@@ -160,21 +161,87 @@
                                         <constraint firstItem="dex-Gp-SDv" firstAttribute="leading" secondItem="X9c-FL-lDt" secondAttribute="leading" constant="14" id="xwV-pY-PYt"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLDateSectionHeader" rowHeight="22" id="dzJ-G1-1Te">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="DateSectionHeader" rowHeight="22" id="dzJ-G1-1Te">
                                 <rect key="frame" x="0.0" y="162" width="320" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dzJ-G1-1Te" id="PJb-2d-ZLj">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L Lable -22 Sep 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-py-7BK" userLabel="LeftLabel">
+                                            <rect key="frame" x="14" y="3" width="129" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="R Lable -109 Days Ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUw-t2-NVa" userLabel="RightLabel">
+                                            <rect key="frame" x="165.5" y="3" width="140.5" height="16"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="wUw-t2-NVa" firstAttribute="centerY" secondItem="PJb-2d-ZLj" secondAttribute="centerY" id="1T7-F2-bdQ"/>
+                                        <constraint firstItem="wUw-t2-NVa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vHv-py-7BK" secondAttribute="trailing" constant="4" id="9n9-VZ-0M9"/>
+                                        <constraint firstItem="vHv-py-7BK" firstAttribute="leading" secondItem="PJb-2d-ZLj" secondAttribute="leading" constant="14" id="PJd-2e-7PW"/>
+                                        <constraint firstAttribute="trailing" secondItem="wUw-t2-NVa" secondAttribute="trailing" constant="14" id="nvv-F6-QqY"/>
+                                        <constraint firstItem="vHv-py-7BK" firstAttribute="centerY" secondItem="PJb-2d-ZLj" secondAttribute="centerY" id="sw2-Fx-7La"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLTransactionCell" id="uQ1-hL-NCT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionCell" id="uQ1-hL-NCT">
                                 <rect key="frame" x="0.0" y="184" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uQ1-hL-NCT" id="P7l-uC-N1X">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FindUsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dAE-wx-mbG">
+                                            <rect key="frame" x="14" y="6" width="16" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="xfr-em-Tpq"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="xfr-em-Tpq"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="L Label - Pending: WilSON PARKING SYDOBS SYDNEY NS AUS LAST 4 CARD DIGITS: 6901" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-hx-Yt3">
+                                            <rect key="frame" x="39" y="0.0" width="202.5" height="43.5"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cx-MV-IBx" userLabel="RightLabel">
+                                            <rect key="frame" x="258" y="14" width="40" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NHO-hx-Yt3" firstAttribute="leading" secondItem="dAE-wx-mbG" secondAttribute="trailing" id="870-N3-SzJ"/>
+                                        <constraint firstItem="NHO-hx-Yt3" firstAttribute="leading" secondItem="dAE-wx-mbG" secondAttribute="leading" constant="25" id="8o9-jP-SfX"/>
+                                        <constraint firstAttribute="bottom" secondItem="NHO-hx-Yt3" secondAttribute="bottom" id="BTs-YC-MSt"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5cx-MV-IBx" secondAttribute="trailing" constant="14" id="OBy-dC-6kU"/>
+                                        <constraint firstItem="5cx-MV-IBx" firstAttribute="centerY" secondItem="P7l-uC-N1X" secondAttribute="centerY" id="fdA-Xj-ZcP"/>
+                                        <constraint firstItem="dAE-wx-mbG" firstAttribute="leading" secondItem="P7l-uC-N1X" secondAttribute="leading" constant="14" id="hb0-8g-dPc"/>
+                                        <constraint firstItem="NHO-hx-Yt3" firstAttribute="top" secondItem="P7l-uC-N1X" secondAttribute="top" id="k2y-qw-2Sq"/>
+                                        <constraint firstItem="dAE-wx-mbG" firstAttribute="centerY" secondItem="P7l-uC-N1X" secondAttribute="centerY" id="o6C-39-0zo"/>
+                                        <constraint firstItem="5cx-MV-IBx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NHO-hx-Yt3" secondAttribute="trailing" constant="4" id="q3W-4J-pLi"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="870-N3-SzJ"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -210,6 +277,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FindUsIcon" width="16" height="32"/>
         <image name="TransactionHeaderIcon" width="37" height="37"/>
     </resources>
 </document>
