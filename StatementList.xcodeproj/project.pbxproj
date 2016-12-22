@@ -15,8 +15,8 @@
 		09527C7B1E0B66A300805731 /* SpendingPredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C791E0B66A300805731 /* SpendingPredictionViewController.swift */; };
 		09527C7D1E0BA39900805731 /* ATMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C7C1E0BA39900805731 /* ATMLocationViewController.swift */; };
 		09527C7E1E0BA39900805731 /* ATMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C7C1E0BA39900805731 /* ATMLocationViewController.swift */; };
-		09567C621E09465700F45B27 /* AccountDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09567C611E09465700F45B27 /* AccountDetailDataSource.swift */; };
-		09567C631E09465700F45B27 /* AccountDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09567C611E09465700F45B27 /* AccountDetailDataSource.swift */; };
+		09567C621E09465700F45B27 /* AccountDetailDataManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09567C611E09465700F45B27 /* AccountDetailDataManipulator.swift */; };
+		09567C631E09465700F45B27 /* AccountDetailDataManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09567C611E09465700F45B27 /* AccountDetailDataManipulator.swift */; };
 		097D58F91E07F2D5003935E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097D58F81E07F2D5003935E3 /* AppDelegate.swift */; };
 		097D58FB1E07F2D5003935E3 /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097D58FA1E07F2D5003935E3 /* AccountDetailViewController.swift */; };
 		097D58FE1E07F2D5003935E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097D58FC1E07F2D5003935E3 /* Main.storyboard */; };
@@ -48,7 +48,7 @@
 		09527C771E0A4CFF00805731 /* DateSectionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSectionHeaderCell.swift; sourceTree = "<group>"; };
 		09527C791E0B66A300805731 /* SpendingPredictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingPredictionViewController.swift; sourceTree = "<group>"; };
 		09527C7C1E0BA39900805731 /* ATMLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMLocationViewController.swift; sourceTree = "<group>"; };
-		09567C611E09465700F45B27 /* AccountDetailDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailDataSource.swift; sourceTree = "<group>"; };
+		09567C611E09465700F45B27 /* AccountDetailDataManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailDataManipulator.swift; sourceTree = "<group>"; };
 		097D58F51E07F2D5003935E3 /* StatementList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatementList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097D58F81E07F2D5003935E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097D58FA1E07F2D5003935E3 /* AccountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				09527C721E0A4C5C00805731 /* Cells */,
 				097D58F81E07F2D5003935E3 /* AppDelegate.swift */,
 				097D58FA1E07F2D5003935E3 /* AccountDetailViewController.swift */,
-				09567C611E09465700F45B27 /* AccountDetailDataSource.swift */,
+				09567C611E09465700F45B27 /* AccountDetailDataManipulator.swift */,
 				09527C791E0B66A300805731 /* SpendingPredictionViewController.swift */,
 				09527C7C1E0BA39900805731 /* ATMLocationViewController.swift */,
 				09527C711E0A4C3400805731 /* DataModel */,
@@ -337,7 +337,7 @@
 				097D58F91E07F2D5003935E3 /* AppDelegate.swift in Sources */,
 				09DFAE901E090F9D00AA965D /* Transaction.swift in Sources */,
 				09527C7A1E0B66A300805731 /* SpendingPredictionViewController.swift in Sources */,
-				09567C621E09465700F45B27 /* AccountDetailDataSource.swift in Sources */,
+				09567C621E09465700F45B27 /* AccountDetailDataManipulator.swift in Sources */,
 				09527C741E0A4C8400805731 /* AccountDetailHeaderCell.swift in Sources */,
 				09DFAE931E090FCE00AA965D /* ATMDetail.swift in Sources */,
 				09527C781E0A4CFF00805731 /* DateSectionHeaderCell.swift in Sources */,
@@ -353,7 +353,7 @@
 			files = (
 				09DFAE911E090F9D00AA965D /* Transaction.swift in Sources */,
 				097D590E1E07F2D5003935E3 /* StatementListTests.swift in Sources */,
-				09567C631E09465700F45B27 /* AccountDetailDataSource.swift in Sources */,
+				09567C631E09465700F45B27 /* AccountDetailDataManipulator.swift in Sources */,
 				09527C7B1E0B66A300805731 /* SpendingPredictionViewController.swift in Sources */,
 				09DFAE971E090FDF00AA965D /* AccountDetail.swift in Sources */,
 				09527C7E1E0BA39900805731 /* ATMLocationViewController.swift in Sources */,

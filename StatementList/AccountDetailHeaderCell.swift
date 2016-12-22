@@ -17,10 +17,13 @@ class AccountDetailHeaderCell: UITableViewCell {
     @IBOutlet weak var availableFunds: UILabel!
     @IBOutlet weak var balance: UILabel!
     
+    // Refresh cell with data, sicnce this method updates all subviews that can change, it doesn't need to explicitly "return to clear" state 
     func refreshView(accountDetail: AccountDetail) {
+        // AccountName & AccountNumber Labels
         accountName!.text = accountDetail.accountName
         accountNumber!.text = accountDetail.accountNumber
         
+        // AvailableFunds and balance Labels
         AccountDetailHeaderCell.currencyFormatter.numberStyle = .currency
         availableFunds!.text = AccountDetailHeaderCell.currencyFormatter.string(from: accountDetail.availableFunds)
         balance!.text = AccountDetailHeaderCell.currencyFormatter.string(from: accountDetail.balance)

@@ -11,7 +11,7 @@ import UIKit
 
 class SpendingPredictionViewController: UIViewController {
     
-    public var predicatedSpending: NSNumber?
+    public var predictedSpending: NSNumber?
     @IBOutlet var spendingLabel: UILabel!
     
     @IBAction func dismissView() {
@@ -21,7 +21,7 @@ class SpendingPredictionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        spendingLabel.text = AccountDetailHeaderCell.currencyFormatter.string(from: predicatedSpending ?? 0)
+        spendingLabel.text = AccountDetailHeaderCell.currencyFormatter.string(from: predictedSpending ?? 0)
         
     }
     
