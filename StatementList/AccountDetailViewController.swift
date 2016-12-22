@@ -77,7 +77,7 @@ class AccountDetailViewController: UITableViewController {
                     // Enable spending prediction button(the + BarButtonItem) when data is ready
                     self.spendingButton.isEnabled = true
                 } catch let error {
-                    print("\(error)")
+                    print("Data Error: \(error)")
                 }
 
             } else {

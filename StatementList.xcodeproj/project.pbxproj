@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0909B7501E0C93B10075EC0A /* exercise.json in Resources */ = {isa = PBXBuildFile; fileRef = 0909B74F1E0C93B10075EC0A /* exercise.json */; };
+		0909B7511E0C96D50075EC0A /* AccountDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C731E0A4C8400805731 /* AccountDetailHeaderCell.swift */; };
+		0909B7521E0C96D80075EC0A /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C751E0A4C9D00805731 /* TransactionCell.swift */; };
+		0909B7531E0C96DB0075EC0A /* DateSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C771E0A4CFF00805731 /* DateSectionHeaderCell.swift */; };
+		0909B7541E0C96E00075EC0A /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097D58FA1E07F2D5003935E3 /* AccountDetailViewController.swift */; };
 		09169D3D1E087B8200A07161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09169D3C1E087B8200A07161 /* Assets.xcassets */; };
 		09527C741E0A4C8400805731 /* AccountDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C731E0A4C8400805731 /* AccountDetailHeaderCell.swift */; };
 		09527C761E0A4C9D00805731 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527C751E0A4C9D00805731 /* TransactionCell.swift */; };
@@ -42,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0909B74F1E0C93B10075EC0A /* exercise.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercise.json; sourceTree = "<group>"; };
 		09169D3C1E087B8200A07161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09527C731E0A4C8400805731 /* AccountDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailHeaderCell.swift; sourceTree = "<group>"; };
 		09527C751E0A4C9D00805731 /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		097D590C1E07F2D5003935E3 /* StatementListTests */ = {
 			isa = PBXGroup;
 			children = (
+				0909B74F1E0C93B10075EC0A /* exercise.json */,
 				097D590D1E07F2D5003935E3 /* StatementListTests.swift */,
 				097D590F1E07F2D5003935E3 /* Info.plist */,
 			);
@@ -275,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0909B7501E0C93B10075EC0A /* exercise.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,11 +360,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DFAE911E090F9D00AA965D /* Transaction.swift in Sources */,
+				0909B7511E0C96D50075EC0A /* AccountDetailHeaderCell.swift in Sources */,
 				097D590E1E07F2D5003935E3 /* StatementListTests.swift in Sources */,
 				09567C631E09465700F45B27 /* AccountDetailDataManipulator.swift in Sources */,
 				09527C7B1E0B66A300805731 /* SpendingPredictionViewController.swift in Sources */,
+				0909B7521E0C96D80075EC0A /* TransactionCell.swift in Sources */,
 				09DFAE971E090FDF00AA965D /* AccountDetail.swift in Sources */,
 				09527C7E1E0BA39900805731 /* ATMLocationViewController.swift in Sources */,
+				0909B7541E0C96E00075EC0A /* AccountDetailViewController.swift in Sources */,
+				0909B7531E0C96DB0075EC0A /* DateSectionHeaderCell.swift in Sources */,
 				09DFAE941E090FCE00AA965D /* ATMDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
